@@ -3,5 +3,14 @@
     <style name="Base.Theme.GrowDailyApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/splash_background_dark</item>
+    </style>
+
+    <!-- Splash Screen Theme for Dark Mode -->
+    <!-- It's important that this style has the same name as in values/themes.xml -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.GrowDailyApp</item>
     </style>
 </resources>
